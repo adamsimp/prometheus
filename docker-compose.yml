@@ -5,6 +5,7 @@ prometheus:
   links:
     - "exporter:export"
     - "cadvisor:cadvisor"
+    - "pushgateway:pushgateway"
   volumes: 
     - /opt/prometheus/prom/prometheus.yml:/etc/prometheus/prometheus.yml
   labels: 
