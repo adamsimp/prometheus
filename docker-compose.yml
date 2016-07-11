@@ -6,7 +6,7 @@ prometheus:
     - "exporter:export"
     - "cadvisor:cadvisor"
   volumes: 
-    - /opt/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    - /opt/prometheus/prom/prometheus.yml:/etc/prometheus/prometheus.yml
   labels: 
          - "name=prometheus"
          - "description=Core of Promethues"
