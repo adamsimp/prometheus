@@ -63,3 +63,12 @@ cadvisor:
     - "name=cAdvisor"
     - "description=Google Container Advisor collects metrics from host and containers"
     - "version=latest"
+
+pushgateway:
+  image: "prom/pushgateway"
+  ports: 
+    - "9191:9191"
+  expose: 
+    - "9191"
+  labels: 
+    - "name=pushgateway"
