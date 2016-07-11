@@ -67,7 +67,7 @@ cadvisor:
 pushgateway:
   image: "prom/pushgateway"
   ports: 
-    - "9191:9191"
+    - "9091:9091"
   expose: 
     - "9191"
   labels: 
